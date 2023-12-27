@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    margin: 10px;
+    padding: 5px;
+    border-bottom: 2px solid brown;
+}
+
+/*-----------------------  Distribución -------------------------------*/
+
+.content {
+    display: flex;
+}
+
+.main-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*-------------------------- Nav Bar -----------------------------------------------*/
+
+nav {
+    margin: 10px;
+    padding: 5px;
+    background-color: brown;
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    float: left;
+    font-size: 20px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background: black;
+}
+
+/* ----------------------------------- Header ------------------------------------------- */
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+    padding-left: 40px;
+    background-color: whitesmoke;
+    font-size: 20px;
+}
+
+header>a>img {
+    display: flex;
+    width: 100px;
+    height: 60px;
+    border-radius: 100px;
+}
+
+/*-------------------------------------- Article--------------------------------------------------------- */
+
+.main-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.main-section>article {
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+section {
+    margin: 10px;
+    padding: 5px;
+}
+
+article {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ------------------------------------------ aside ---------------------------- */
+
+aside {
+    margin: 10px;
+    padding: 5px;
+    flex: 0.5;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #e4dede;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+aside>img {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+/* -------------------------------- Footer ------------------------------------------------------ */
+
+footer {
+    margin: 10px;
+    padding: 5px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+/* -------------------------------- Form ------------------------------------------------------ */
+
+form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    background-color: #66626086;
+    
+}
+
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+input,
+textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #000;
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+}
+
+div>form>div {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+div>form>div>div {
+    margin-top: 20px;
+}
+
+/* -------------------------------- Form button ------------------------------------------------------ */
+
+.button {
+    margin: 10px auto;
+    display: block;
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.primary {
+    background-color: black;
+}
+
+.primary:hover {
+    background:  brown;
+}

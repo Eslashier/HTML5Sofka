@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <a href="img.html">
+            <canvas id="myCanvas" width="200" height="100" style="border:0px;">
+                Your browser does not support the HTML canvas tag.</canvas>
+        </a>
+        <p>Header de la Pagina</p>
+    </header>
+    <nav>
+        <ul>
+            <div>
+                <li>
+                    <a href="#">
+                        Productos
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Categorias </a>
+                </li>
+                <li>
+                    <a href="#">Novedades </a>
+                </li>
+                <li>
+                    <a href="#">Sorprendeme </a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto </a>
+                </li>
+            </div>
+            <li>
+                <a href="#">
+                    Iniciar sesión
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="content">
+        <form action="index.html">
+            <h2>FORMULARIO DE CONTACTO</h2>
+            <div>
+                <div>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="user_name" />
+                </div>
+                <div>
+                    <label for="mail">Correo electrónico:</label>
+                    <input type="email" id="mail" name="user_mail" />
+                </div>
+                <div>
+                    <label for="msg">Mensaje:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                </div>
+            </div>
+            <button class="button primary" type="submit">Envíe su mensaje</button>
+        </form>
+    </div>
+    <footer>
+
+        <p>&copy; 2023 Footer de La Pagina. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+<script src="./js/main.js"></script>
+
+</html>
